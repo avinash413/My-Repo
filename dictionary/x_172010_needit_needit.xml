@@ -3,6 +3,7 @@
     <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_172010_needit_needit" sizeclass="4" type="collection">
         <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
         <element label="Integer" mandatory="true" max_length="40" name="u_integer_1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_reference_for" reference="x_172010_needit_needit" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" max_length="40" name="u_request_type" type="string">
             <choice>
@@ -22,6 +23,7 @@
                 <element label="Legal 2" sequence="5" value="legal 2"/>
                 <element label="Software Engineer 1" sequence="6" value="se1"/>
                 <element label="Software Engineer 2" sequence="7" value="se2"/>
+                <element label="Other" sequence="8" value="Other"/>
             </choice>
         </element>
     </element>
